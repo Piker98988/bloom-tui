@@ -26,12 +26,8 @@ Requires Python 3.6+
 Source: https://github.com/yourusername/colourup
 """
 
-import ansi
+from . import styles
 from .title import title
 from .pinput import pinput
 
-__all__ = [
-    ansi,
-    title,
-    pinput
-]
+__all__ = [styles, title, pinput]

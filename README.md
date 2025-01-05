@@ -12,7 +12,7 @@ Make your terminal output beautiful with simple, intuitive styling functions.
 - 💫 Text effects (bold, italic, underline, inverse)
 - 📏 Centered titles with custom borders
 - 🔤 Styled input prompts
-- 🪟 Windows support via Colorama
+- 💻 Windows support via Colorama
 
 ## 📦 Installation
 
@@ -27,14 +27,16 @@ from colourup import title, pinput
 from colourup.styles import fg, bg, style
 
 # Create beautiful titles
-title("Welcome to ColourUp!")  # ====== Welcome to ColourUp! ======
+title("Welcome to ColourUp!", "=", 6)  # ====== Welcome to ColourUp! ======
 
-# Styled input prompts
+# Styled input prompts (spaces at the end included)
 name = pinput("What's your name?", customprompt="→")
+# What's your name?
+# → 
 
 # Colorful output
-print(f"{fg.GREEN}{style.BOLD}Success!{style.RESET}")
-print(f"{bg.BLUE}{fg.WHITE}Info message{style.RESET}")
+print(f"{fg.GREEN}{styles.BOLD}Success!{styles.RESET}")
+print(f"{bg.BLUE}{fg.WHITE}Info message{styles.RESET}")
 ```
 
 ## 🎨 Available Styles
@@ -44,16 +46,19 @@ Standard: `BLACK` `RED` `GREEN` `YELLOW` `BLUE` `MAGENTA` `CYAN` `WHITE`
 Bright: `BBLACK` `BRED` `BGREEN` `BYELLOW` `BBLUE` `BMAGENTA` `BCYAN` `BWHITE`
 
 ### Text Effects
-- `BOLD`
-- `ITALIC`
-- `UNDERLINE`
-- `INVERSE`
-- `RESET`
+- `BOLD` -- **Bold text**
+- `ITALIC` -- *Italic text*
+- `UNDERLINE` -- Underlined text
+- `FLIPPED` -- The foreground and background colours are flipped
+- `RESET` -- Reset all styles, leave it like default 
+
+> [!TIP]
+> Use `styles.RESET` at the end of each print to prevent bleeding the style to the next lines
 
 ## 🛠️ Development
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/colourup.git
+git clone https://github.com/piker98988/colourup.git
 cd colourup
 
 # Create virtual environment

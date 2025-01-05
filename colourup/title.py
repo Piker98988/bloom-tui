@@ -1,9 +1,9 @@
 """This module contains the code for the title function."""
+
 import sys
 
 
-def title(text: str, borderchar: str = "=",
-          borderlen: int = 10, endln=True) -> None:
+def title(text: str, borderchar: str = "=", borderlen: int = 10, endln=True) -> None:
     """Create a centered text with decorative borders.
 
     Args:
