@@ -1,0 +1,7 @@
+.idea
+.venv
+.venv_test
+__pycache__
+.egg
+colourup.egg-info
+dist
