@@ -2,6 +2,8 @@
 
 [![PyPI version](https://badge.fury.io/py/colourup.svg)](https://badge.fury.io/py/colourup)
 [![Static Badge](https://img.shields.io/badge/python-%2B3.12-blue?logo=python&logoColor=blue)](https://www.python.org/downloads/)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/piker98988/colourup/python-package.yml)]
+
 
 
 Make your terminal output beautiful with simple, intuitive styling functions.
