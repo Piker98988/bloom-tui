@@ -1,7 +1,7 @@
 # ColourUp 🎨
 
 [![PyPI version](https://badge.fury.io/py/colourup.svg)](https://badge.fury.io/py/colourup)
-[![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
+[![Static Badge](https://img.shields.io/badge/python-%2B3.12-blue?logo=python&logoColor=blue)](https://www.python.org/downloads/)
 
 
 Make your terminal output beautiful with simple, intuitive styling functions.
