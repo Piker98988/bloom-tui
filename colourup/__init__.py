@@ -22,7 +22,7 @@ Example:
     What's your name?
     Name:
 
-Requires Python 3.6+
+Requires Python 3.11+
 Source: https://github.com/yourusername/colourup
 """
 
