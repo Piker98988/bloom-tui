@@ -1,3 +1,26 @@
+"""
+This module provides foreground color codes for terminal styling.
+
+Each constant represents an ANSI escape sequence for setting the foreground (text) color.
+
+Attributes:
+    BLACK (str): Black text.
+    RED (str): Red text.
+    GREEN (str): Green text.
+    YELLOW (str): Yellow text.
+    BLUE (str): Blue text.
+    MAGENTA (str): Magenta text.
+    CYAN (str): Cyan text.
+    WHITE (str): White text.
+    BBLACK (str): Bright black (gray) text.
+    BRED (str): Bright red text.
+    BGREEN (str): Bright green text.
+    BYELLOW (str): Bright yellow text.
+    BBLUE (str): Bright blue text.
+    BMAGENTA (str): Bright magenta text.
+    BCYAN (str): Bright cyan text.
+    BWHITE (str): Bright white text.
+"""
 BLACK: str = "\033[30m"
 RED: str = "\033[31m"
 GREEN: str = "\033[32m"

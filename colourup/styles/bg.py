@@ -1,3 +1,26 @@
+"""
+This module provides background color codes for terminal styling.
+
+Each constant represents an ANSI escape sequence for setting the background color of text.
+
+Attributes:
+    BLACK (str): Black background.
+    RED (str): Red background.
+    GREEN (str): Green background.
+    YELLOW (str): Yellow background.
+    BLUE (str): Blue background.
+    MAGENTA (str): Magenta background.
+    CYAN (str): Cyan background.
+    WHITE (str): White background.
+    BBLACK (str): Bright black (gray) background.
+    BRED (str): Bright red background.
+    BGREEN (str): Bright green background.
+    BYELLOW (str): Bright yellow background.
+    BBLUE (str): Bright blue background.
+    BMAGENTA (str): Bright magenta background.
+    BCYAN (str): Bright cyan background.
+    BWHITE (str): Bright white background.
+"""
 BLACK: str = "\033[40m"
 RED: str = "\033[41m"
 GREEN: str = "\033[42m"
