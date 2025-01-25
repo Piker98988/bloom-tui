@@ -29,33 +29,34 @@ from colourup import title, pinput
 from colourup.styles import fg, bg, style
 
 # Create beautiful titles
-title("Welcome to ColourUp!", "=", 6)  # ====== Welcome to ColourUp! ======
+title(text="Welcome to ColourUp!", borderchar="=", borderlen=6)  # ====== Welcome to ColourUp! ======
 
 # Styled input prompts (spaces at the end included)
-name = pinput("What's your name?", customprompt="→")
+name = pinput("What's your name?", customprefix="→")
 # What's your name?
 # → 
 
 # Colorful output
-print(f"{fg.GREEN}{styles.BOLD}Success!{styles.RESET}")
-print(f"{bg.BLUE}{fg.WHITE}Info message{styles.RESET}")
+print(f"{fg.GREEN}{style.BOLD}Success!{style.RESET}")
+print(f"{bg.BLUE}{fg.WHITE}Info message{style.RESET}")
 ```
 
 ## 🎨 Available Styles
 
 ### Colors (fg/bg)
 Standard: `BLACK` `RED` `GREEN` `YELLOW` `BLUE` `MAGENTA` `CYAN` `WHITE`
+
 Bright: `BBLACK` `BRED` `BGREEN` `BYELLOW` `BBLUE` `BMAGENTA` `BCYAN` `BWHITE`
 
 ### Text Effects
 - `BOLD` -- **Bold text**
 - `ITALIC` -- *Italic text*
 - `UNDERLINE` -- Underlined text
-- `FLIPPED` -- The foreground and background colours are flipped
+- `INVERTED` -- The foreground and background colours are inverted
 - `RESET` -- Reset all styles, leave it like default 
 
 > [!TIP]
-> Use `styles.RESET` at the end of each print to prevent bleeding the style to the next lines
+> Use `style.RESET` at the end of each print to prevent bleeding the style to the next lines
 
 ## 🛠️ Development
 ```bash
@@ -84,7 +85,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU General Public License v3.0 — see the [LICENSE](LICENSE) file for details.
 
 Copyright (C) 2024 Piker
 
