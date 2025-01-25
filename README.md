@@ -1,4 +1,4 @@
-# ColourUp 🎨
+# 🌸🎨 Bloom 🎨🌸
 
 [![PyPI version](https://badge.fury.io/py/colourup.svg)](https://badge.fury.io/py/colourup)
 [![Static Badge](https://img.shields.io/badge/python-%2B3.12-blue?logo=python&logoColor=blue)](https://www.python.org/downloads/)
@@ -19,17 +19,17 @@ Make your terminal output beautiful with simple, intuitive styling functions.
 ## 📦 Installation
 
 ```bash
-pip install colourup
+pip install bloom-tui
 ```
 
 ## 🚀 Quick Start
 
 ```python
-from colourup import title, pinput, selector
-from colourup.styles import fg, bg, style
+from bloom import title, pinput, selector
+from bloom.styles import fg, bg, style
 
 # Create beautiful titles
-title(text="Welcome to ColourUp!", borderchar="=", borderlen=6)  # ====== Welcome to ColourUp! ======
+title(text="Welcome to Bloom!", borderchar="=", borderlen=6)  # ====== Welcome to Bloom! ======
 
 # Styled input prompts (spaces at the end included)
 name = pinput("What's your name?", customprefix="→")
@@ -71,8 +71,8 @@ Bright: `BBLACK` `BRED` `BGREEN` `BYELLOW` `BBLUE` `BMAGENTA` `BCYAN` `BWHITE`
 ## 🛠️ Development
 ```bash
 # Clone the repository
-git clone https://github.com/piker98988/colourup.git
-cd colourup
+git clone https://github.com/piker98988/bloom-tui.git
+cd bloom-tui
 
 # Create virtual environment
 python -m venv venv

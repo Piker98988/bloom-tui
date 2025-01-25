@@ -41,3 +41,40 @@ This version introduces improvements to the `colourup` library, enhancing the fl
 - Plan to add localization support for input prompts and titles.
 - Upcoming features will allow dynamic attribute injection for more customizable outputs.
 - Highlighting system in development for console outputs, including warnings and errors.
+
+## [0.2.0] **Selector and Improved Documentation** — 25-01-2025
+
+This version introduces the new `Selector` feature in the base `colourup` library for terminal-based selection menus and significant improvements to documentation for enhanced clarity and usability.
+
+### Added
+
+- Introduced the `Selector` class to build text-based interactive menus with navigation capabilities. Key features include:
+  - Menu navigation using arrow keys and `Enter` for selection.
+  - Customizable prompts and multi-option handling.
+- Added a new `cursor` helper module in the `utils` package for cursor control in terminal applications. Includes:
+  - Cursor movement constants like `MOVE_UP`, `MOVE_DOWN`, `ERASE_LINE`, and more.
+  - Visibility control using `HIDE` and `SHOW`.
+- Expanded `README.md` with an example showcasing the new `Selector` feature, demonstrating its integration and use cases in TUI applications.
+
+### Changed
+
+- Branding: from ColourUp to Bloom
+- Enhanced inline function documentation and type annotations across the entire library for better clarity and standardization:
+  - Updated docstrings in the `title` and `pinput` functions to reflect standard formats for arguments, return types, and descriptions.
+  - Added detailed docstrings for color (`fg`, `bg`) and style (`style`) modules, covering all available constants and their purposes.
+  - Provided guidance on module auto-initialization behavior (e.g., `colorama` initialization setup for terminal styling).
+- Adjusted `colorama.init()` by setting `autoreset=False` in the `styles/__init__.py` file to give developers more manual control over ANSI style resets.
+- Renamed constants:
+  - From `FLIPPED` to `INVERTED` in `style.py` for better readability and alignment with terminal color terminology.
+- Updated `requirements.txt`:
+  - Added new dependency `getch` for keyboard event handling.
+
+### Fixes
+
+- Resolved minor typos in the `README.md`, improving presentation consistency.
+- Corrected behavior in `pinput` and `title` functions:
+  - Polished formatting for multi-line output handling in custom styles and borders.
+
+### Next versions
+
+- A focus on enhancing the `Selector`'s styling options
