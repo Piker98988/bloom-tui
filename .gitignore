@@ -6,3 +6,5 @@ __pycache__
 colourup.egg-info
 dist
 main.py
+
+.fuse_hidden*
