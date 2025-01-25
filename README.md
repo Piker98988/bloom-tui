@@ -25,7 +25,7 @@ pip install colourup
 ## 🚀 Quick Start
 
 ```python
-from colourup import title, pinput
+from colourup import title, pinput, selector
 from colourup.styles import fg, bg, style
 
 # Create beautiful titles
@@ -35,6 +35,16 @@ title(text="Welcome to ColourUp!", borderchar="=", borderlen=6)  # ====== Welcom
 name = pinput("What's your name?", customprefix="→")
 # What's your name?
 # → 
+
+# Easy selection menus
+mySelector = selector.Selector("How are you feeling?", ["good", "bad", "normal"])
+mySelector.invoke()
+"""
+How are you feeling?
+ > good
+ - bad
+ - normal
+"""
 
 # Colorful output
 print(f"{fg.GREEN}{style.BOLD}Success!{style.RESET}")

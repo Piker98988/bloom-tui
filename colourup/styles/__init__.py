@@ -22,7 +22,7 @@ from . import style
 
 import colorama
 
-colorama.init()
+colorama.init(autoreset=False)
 
 __all__ = [
     fg,
