@@ -31,4 +31,4 @@ from .title import title
 from .pinput import pinput
 from .selector import Selector
 
-__all__ = [styles, title, pinput, selector]
+__all__ = [styles, title, pinput, Selector]
