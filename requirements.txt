@@ -1,5 +1,0 @@
-colorama
-twine
-setuptools
-build
-getch

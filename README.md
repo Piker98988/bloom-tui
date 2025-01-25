@@ -1,9 +1,9 @@
 # 🌸🎨 Bloom 🎨🌸
 
-[![PyPI version](https://badge.fury.io/py/colourup.svg)](https://badge.fury.io/py/colourup)
+[![PyPI version](https://badge.fury.io/py/bloom-tui.svg)](https://badge.fury.io/py/bloom-tui)
 [![Static Badge](https://img.shields.io/badge/python-%2B3.12-blue?logo=python&logoColor=blue)](https://www.python.org/downloads/)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/piker98988/colourup/python-package.yml)
-![GitHub last commit](https://img.shields.io/github/last-commit/piker98988/colourup)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/piker98988/bloom-tui/python-package.yml)
+![GitHub last commit](https://img.shields.io/github/last-commit/piker98988/bloom-tui)
 
 Make your terminal output beautiful with simple, intuitive styling functions.
 
@@ -74,14 +74,9 @@ Bright: `BBLACK` `BRED` `BGREEN` `BYELLOW` `BBLUE` `BMAGENTA` `BCYAN` `BWHITE`
 git clone https://github.com/piker98988/bloom-tui.git
 cd bloom-tui
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or
-.\venv\Scripts\activate  # Windows
-
-# Install dependencies
-pip install -r requirements.txt
+# Install bloom
+pip install poetry
+poetry install
 ```
 
 ## 💡 Contributing
@@ -103,4 +98,3 @@ This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
-

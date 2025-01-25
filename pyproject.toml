@@ -1,25 +1,24 @@
 [project]
-license = { file = "LICENSE" }
 name = "bloom-tui"
-authors = [{ name = "Piker", email = "iker.pavcur@gmail.com" }]
-description = "Utility to make your terminal apps stand out."
-readme = "README.md"
-requires-python = ">=3.11"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-    "Operating System :: OS Independent",
-]
 version = "0.2.0"
+description = "Utility to make you terminal apps shine"
+authors = [
+    {name = "Piker98988",email = "111224605+Piker98988@users.noreply.github.com"}
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.12"
 dependencies = [
-    "colorama>=0.4.6",
-    "getch"
+    "colorama (>=0.4.6,<0.5.0)",
+    "getch (>=1.0,<2.0)"
 ]
 
-[project.urls]
-Homepage = "https://github.com/piker98988/colourup"
-Issues = "https://github.com/piker98988/colourup/issues"
 
 [build-system]
-requires = ["setuptools>=42", "wheel", "twine"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [
+    { include = "bloom" },
+]
