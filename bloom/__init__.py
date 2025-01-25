@@ -1,4 +1,4 @@
-"""ColourUp - Terminal Output Styling Package
+"""Bloom - Terminal Output Styling Package
 
 A Python package for enhancing terminal output with colors, styles, and
 formatted text elements. Provides simple functions to create visually
@@ -15,7 +15,7 @@ Main Functions:
     pinput() - Display styled input prompts
 
 Example:
-    >>> from colourup import title, pinput
+    >>> from bloom import title, pinput
     >>> title("Welcome", "=", 6)
     ====== Welcome ======
     >>> name = pinput("What's your name?", customprompt="Name:")
@@ -23,11 +23,12 @@ Example:
     Name:
 
 Requires Python 3.11+
-Source: https://github.com/yourusername/colourup
+Source: https://github.com/piker98988/bloom-tui
 """
 
 from . import styles
 from .title import title
 from .pinput import pinput
+from .selector import Selector
 
-__all__ = [styles, title, pinput]
+__all__ = [styles, title, pinput, selector]
