@@ -3,8 +3,9 @@
 .venv_test
 __pycache__
 .egg
-colourup.egg-info
 dist
 main.py
 
 .fuse_hidden*
+
+/bloom_tui.egg-info/*
