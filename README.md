@@ -90,11 +90,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the GNU General Public License v3.0 — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **Apache License 2.0**. You are free to use, modify, 
+and distribute this code, provided that you include the original license and a notice 
+attributing the work to me. You must also indicate any significant changes made to the code. 
+For the full license text, see the [LICENSE](LICENSE) file.
 
 Copyright (C) 2024 Piker
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
